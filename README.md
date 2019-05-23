@@ -1,1 +1,1 @@
-# l-system-viewer
+# l-system-simulator
