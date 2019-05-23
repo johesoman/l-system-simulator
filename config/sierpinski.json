@@ -1,0 +1,29 @@
+{
+  "system": {
+    "commands": {
+      "G": "draw 8",
+      "-": "turn -120",
+      "+": "turn 120",
+      "F": "draw 8"
+    },
+    "axiom": "F-G-G",
+    "rules": {
+      "G": "GG",
+      "F": "F-G+F+G-F"
+    },
+    "iterations": 6
+  },
+  "video": {
+    "windowWidth": 800,
+    "windowHeight": 600,
+    "windowOpenX": 0,
+    "windowOpenY": 0,
+    "backgroundColor": "black",
+    "framesPerSecond": 60,
+    "penStartY": 225,
+    "penStartX": -250,
+    "penStartAngle": 0,
+    "penColor": "magenta",
+    "commandsPerSecond": 120
+  }
+}

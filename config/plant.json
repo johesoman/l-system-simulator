@@ -1,0 +1,30 @@
+{
+  "system": {
+    "commands": {
+      "-": "turn 25",
+      "]": "pop",
+      "+": "turn -25",
+      "[": "push",
+      "F": "draw 4"
+    },
+    "axiom": "X",
+    "rules": {
+      "X": "F+[[X]-X]-F[-FX]+X",
+      "F": "FF"
+    },
+    "iterations": 6
+  },
+  "video": {
+    "windowWidth": 800,
+    "windowHeight": 600,
+    "windowOpenX": 0,
+    "windowOpenY": 0,
+    "backgroundColor": "black",
+    "framesPerSecond": 60,
+    "penStartY": -225,
+    "penStartX": 300,
+    "penStartAngle": 135,
+    "commandsPerSecond": 120,
+    "penColor": "green"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "system": {
+    "commands": {
+      "-": "turn -90",
+      "+": "turn 90",
+      "F": "draw 16"
+    },
+    "axiom": "FX",
+    "rules": {
+      "X": "X+YF+",
+      "Y": "-FX-Y"
+    },
+    "iterations": 10
+  },
+  "video": {
+    "penStartY": -80,
+    "windowOpenX": 0,
+    "backgroundColor": "black",
+    "penStartX": 215,
+    "windowHeight": 600,
+    "windowOpenY": 0,
+    "framesPerSecond": 60,
+    "penStartAngle": 90,
+    "windowWidth": 800,
+    "commandsPerSecond": 120,
+    "penColor": "cyan"
+  }
+}
