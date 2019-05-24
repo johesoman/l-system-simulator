@@ -4,7 +4,7 @@
 1. Clone the source with git and change directory. 
 ```
 $ git clone https://github.com/johesoman/l-system-simulator.git
-$ cd l-system
+$ cd l-system-simulator
 ```
 
 2. Build the code. 
