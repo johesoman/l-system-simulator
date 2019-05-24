@@ -12,7 +12,7 @@ $ cd l-system
 $ stack build
 ```
 
-3. Run the program using a system, either your own or one from `system/`
+3. Run the program using a system, either your own or one from `system/`.
 ```
 $ stack exec l-system-simulator system/sierpinski.json
 ```
