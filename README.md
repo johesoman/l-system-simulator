@@ -17,5 +17,5 @@ $ stack build
 $ stack exec l-system-simulator system/sierpinski.json
 ```
 
-4. Press \<spacebar\> to start/pause the simulation and \<esc\> to exit the program. 
+4. Press \<spacebar\> to start and pause the simulation, and \<esc\> to exit the program. 
 
