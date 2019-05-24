@@ -18,7 +18,7 @@ source-repository head
   type: git
   location: https://github.com/johesoman/l-system-simulator
 
-executable l-system-simulator-exe
+executable l-system-simulator
   main-is: Main.hs
   other-modules:
       Turtle
