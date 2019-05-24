@@ -47,7 +47,7 @@ takePics n t =
 move :: Int -> Turtle -> Turtle
 move dist t =
   let d        = fromIntegral dist
-      (x1, y1) = position t 
+      (x1, y1) = position t
       (x2, y2) = unitVecFromOrientation t
   in t {position = (x1 + x2 * d, y1 + y2 * d)}
 

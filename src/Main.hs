@@ -370,12 +370,6 @@ writeConfig fp = BL.writeFile fp . Aeson.encodePretty' (indent 2)
 
 
 
--- ++++++++
--- + main +
--- ++++++++
-
-
-
 runSimulation :: Gloss.Color -> Gloss.Color -> VideoConfig -> LSystem -> IO ()
 runSimulation bkg pen vid sys = 
   Gloss.play win bkg (fps world) world draw event tick
@@ -398,6 +392,20 @@ runSimulation bkg pen vid sys =
 
 
 
+tryRunSimulation :: Config -> IO ()
+tryRunSimulation cfg =  do
+    case validateColor (backgroundColor (video cfg)) of
+      Left err -> putStrLn err
+
+      Right c1  ->
+        case validateColor (penColor (video cfg)) of
+          Left err2 -> putStrLn err2
+
+          Right c2  ->
+            runSimulation c1 c2 (video cfg) (system cfg)
+
+
+
 main :: IO ()
 main = do
   as <- getArgs
@@ -409,15 +417,6 @@ main = do
       case res of
         Left _ -> putStrLn "Error: unable to parse JSON file."
 
-        Right cfg -> do
-          case validateColor (backgroundColor (video cfg)) of
-            Left err2 -> putStrLn err2
-
-            Right c1  ->
-              case validateColor (penColor (video cfg)) of
-                Left err3 -> putStrLn err3
-
-                Right c2  ->
-                  runSimulation c1 c2 (video cfg) (system cfg)
+        Right cfg -> tryRunSimulation cfg
 
     _ -> putStrLn "Error: expected 1 argument."
