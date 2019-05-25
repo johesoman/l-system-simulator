@@ -24,7 +24,7 @@
     "penStartY": -225,
     "penStartX": 300,
     "penStartAngle": 135,
-    "commandsPerSecond": 120,
+    "commandsPerSecond": 560,
     "penColor": "green"
   }
 }

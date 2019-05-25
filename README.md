@@ -1,5 +1,7 @@
 # l-system-simulator
 
+![](l-system-simulator_preview.gif)
+
 ## Instructions
 1. Clone the source with git and change directory. 
 ```
@@ -14,7 +16,7 @@ $ stack build
 
 3. Run the program using a system, either your own or one from `system/`.
 ```
-$ stack exec l-system-simulator system/sierpinski.json
+$ stack exec l-system-simulator system/plant.json
 ```
 
 4. Press \<spacebar\> to start and pause the simulation, and \<esc\> to exit the program. 

@@ -24,6 +24,6 @@
     "penStartX": -250,
     "penStartAngle": 0,
     "penColor": "magenta",
-    "commandsPerSecond": 120
+    "commandsPerSecond": 240
   }
 }

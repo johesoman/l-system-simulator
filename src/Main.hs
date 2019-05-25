@@ -376,7 +376,7 @@ runSimulation bkg pen vid sys =
 
   where
     win = Gloss.InWindow
-      "L-system"
+      "L-system simulator"
       (windowWidth vid, windowHeight vid)
       (windowOpenX vid, windowOpenY vid)
 
